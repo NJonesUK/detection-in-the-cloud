@@ -11,40 +11,52 @@ export default defineConfig({
 			},
 			sidebar: [
 				{
-					label: 'Credential Access',
+					label: 'TTPs',
 					collapsed: true,
-					autogenerate: { directory: 'credential_access' },
+					items: [
+						{
+							label: 'Credential Access',
+							collapsed: true,
+							autogenerate: { directory: 'TTPs/credential_access' },
+						},
+						{
+							label: 'Defense Evasion',
+							collapsed: true,
+							autogenerate: { directory: 'TTPs/defense_evasion' },
+						},
+						{
+							label: 'Discovery',
+							collapsed: true,
+							autogenerate: { directory: 'TTPs/discovery'}
+						},
+						{
+							label: 'Execution',
+							collapsed: true,
+							autogenerate: { directory: 'TTPs/execution'}
+						},
+						{
+							label: 'Impact',
+							collapsed: true,
+							autogenerate: { directory: 'TTPs/impact'}
+						},
+						{
+							label: 'Persistence',
+							collapsed: true,
+							autogenerate: { directory: 'TTPs/persistence'}
+						},
+						{
+							label: 'Privilege Escalation',
+							collapsed: true,
+							autogenerate: { directory: 'TTPs/privilege_escalation'}
+						}
+					]
 				},
 				{
-					label: 'Defense Evasion',
+					label: "Leonidas Framework Documentation",
 					collapsed: true,
-					autogenerate: { directory: 'defense_evasion' },
-				},
-				{
-					label: 'Discovery',
-					collapsed: true,
-					autogenerate: { directory: 'discovery'}
-				},
-				{
-					label: 'Execution',
-					collapsed: true,
-					autogenerate: { directory: 'execution'}
-				},
-				{
-					label: 'Impact',
-					collapsed: true,
-					autogenerate: { directory: 'impact'}
-				},
-				{
-					label: 'Persistence',
-					collapsed: true,
-					autogenerate: { directory: 'persistence'}
-				},
-				{
-					label: 'Privilege Escalation',
-					collapsed: true,
-					autogenerate: { directory: 'privilege_escalation'}
+					autogenerate: { directory: 'Leonidas Documentation'}
 				}
+
 			]
 		}),
 	],
